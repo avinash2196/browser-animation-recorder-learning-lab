@@ -1,0 +1,13 @@
+{
+  "name": "doctor-animation-recorder",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "record": "node capture.js",
+    "clean": "node -e \"import('fs').then(fs=>fs.rmSync('frames',{recursive:true,force:true}))\""
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "puppeteer": "^23.0.0"
+  }
+}
