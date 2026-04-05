@@ -1,13 +1,20 @@
 {
-  "name": "doctor-animation-recorder",
+  "name": "browser-animation-recorder-learning-lab",
   "version": "1.0.0",
+  "description": "A learning project demonstrating headless browser automation for capturing CSS animations as optimised GIFs using Puppeteer and FFmpeg.",
   "type": "module",
+  "main": "src/index.js",
   "scripts": {
-    "record": "node capture.js",
-    "clean": "node -e \"import('fs').then(fs=>fs.rmSync('frames',{recursive:true,force:true}))\""
+    "record": "node src/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "node -e \"import('fs').then(({default:fs})=>{fs.rmSync('frames',{recursive:true,force:true});fs.rmSync('palette.png',{force:true})})\""
   },
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "puppeteer": "^23.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.0"
   }
 }
