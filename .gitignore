@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Captured frames (generated at runtime — not source code)
+frames/
+
+# Intermediate FFmpeg palette file (generated at runtime)
+palette.png
+
+# Generated GIF output
+*.gif
+
+# Environment variables
+.env
+.env.*
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+*.user
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+
+# Build outputs
+dist/
+build/
